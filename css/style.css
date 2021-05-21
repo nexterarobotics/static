@@ -26947,6 +26947,31 @@ div.tagsinput span.tag a {
     padding-top: 70px;
 }
 
+@media (min-width: 992px) {
+    .sidebar-fixed .sidebar {
+        position: fixed;
+        max-height: auto;
+    }
+
+    .sidebar-fixed .sidebar .nav {
+        max-height: 100vh;
+        overflow: auto;
+        position: relative;
+    }
+
+    .sidebar-fixed .sidebar .nav.sub-menu {
+        max-height: none;
+    }
+
+    .sidebar-fixed .page-body-wrapper {
+        margin-left: 244px;
+    }
+
+    .sidebar-fixed.sidebar-icon-only .page-body-wrapper {
+        margin-left: 70px;
+    }
+}
+
 @media (max-width: 992px) {
     .sidebar .nav {
         padding-top: 0;
