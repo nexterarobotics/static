@@ -200,6 +200,11 @@
             var showSelectedRating = function(text) {
                 // text undefined?
                 text = text ? text : ratingText();
+
+                // update .br-current-rating div
+                if (self.options.showSelectedRating) {
+                    self.$elem.parent().find('.br-current-rating').text(text);
+                }
             };
 
             // return rounded fraction of a value (14.4 -> 40, 0.99 -> 90)
