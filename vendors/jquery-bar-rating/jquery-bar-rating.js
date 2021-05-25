@@ -153,11 +153,6 @@
 
                 });
 
-                // append .br-current-rating div to the widget
-                if (self.options.showSelectedRating) {
-                    $w.append($('<div />', { 'text': '', 'class': 'br-current-rating' }));
-                }
-
                 // additional classes for the widget
                 if (self.options.reverse) {
                     $w.addClass('br-reverse');
@@ -200,11 +195,6 @@
             var showSelectedRating = function(text) {
                 // text undefined?
                 text = text ? text : ratingText();
-
-                // update .br-current-rating div
-                if (self.options.showSelectedRating) {
-                    self.$elem.parent().find('.br-current-rating').text(text);
-                }
             };
 
             // return rounded fraction of a value (14.4 -> 40, 0.99 -> 90)
