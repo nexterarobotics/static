@@ -153,6 +153,11 @@
 
                 });
 
+                // append .br-current-rating div to the widget
+                if (self.options.showSelectedRating) {
+                    $w.append($('<div />', { 'text': '', 'class': 'br-current-rating' }));
+                }
+
                 // additional classes for the widget
                 if (self.options.reverse) {
                     $w.addClass('br-reverse');
