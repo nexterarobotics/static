@@ -25657,7 +25657,7 @@ body.avgrund-active {
 }
 
 .swal2-modal {
-    min-height: 315px;
+    min-height: 200px;
     -webkit-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
@@ -25665,6 +25665,8 @@ body.avgrund-active {
     -webkit-flex-direction: column;
     flex-direction: column;
     border-radius: 10px;
+    background-color: #191c24 !important;
+    border: solid 0.01rem !important;
 }
 
 .swal2-modal .swal2-title {
