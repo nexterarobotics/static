@@ -9244,8 +9244,8 @@ pre code {
 .col-xl-auto {
     position: relative;
     width: 100%;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
 }
 
 .col {
@@ -20422,7 +20422,7 @@ code {
 
 /* Utilities */
 .grid-margin {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
 }
 
 @media (min-width: 576px) {
@@ -21568,7 +21568,7 @@ code {
 }
 
 .card .card-body {
-    padding: 1.75rem 1.5625rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .card .card-body + .card-body {
@@ -25499,6 +25499,9 @@ body.avgrund-active {
 }
 
 /* Rating */
+.br-wrapper{
+    width: max-content;
+}
 .br-theme-fontawesome-stars .br-widget a,
 .br-theme-css-stars .br-widget a {
     font-size: 20px;
@@ -25522,6 +25525,12 @@ body.avgrund-active {
 .br-theme-bars-horizontal .br-widget a {
     background-color: #4d4d4d;
     color: #ffab00;
+    width: 0.2rem;
+    padding: 0px 0px;
+    height: 15px;
+    float: left;
+    margin: 0px 0.05rem;
+    text-align: center;
 }
 
 .br-theme-bars-1to10 .br-widget a.br-selected, .br-theme-bars-1to10 .br-widget a.br-active,
@@ -25562,10 +25571,12 @@ body.avgrund-active {
 
 .br-theme-bars-1to10 .br-widget {
     height: 24px;
+    width: max-content;
 }
 
 .br-theme-bars-1to10 .br-widget .br-current-rating {
     line-height: 1;
+    padding: 0 0 0 10px;
 }
 
 .br-theme-bars-pill .br-widget a {
