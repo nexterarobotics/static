@@ -21568,7 +21568,7 @@ code {
 }
 
 .card .card-body {
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
 }
 
 .card .card-body + .card-body {
@@ -25499,9 +25499,10 @@ body.avgrund-active {
 }
 
 /* Rating */
-.br-wrapper{
+.br-wrapper {
     width: max-content;
 }
+
 .br-theme-fontawesome-stars .br-widget a,
 .br-theme-css-stars .br-widget a {
     font-size: 20px;
@@ -27694,7 +27695,7 @@ div.tagsinput span.tag a {
 
 .content-wrapper {
     background: #000000;
-    padding: 1.875rem 1.75rem;
+    padding: 1rem 1rem;
     width: 100%;
     -webkit-flex-grow: 1;
     flex-grow: 1;
@@ -27715,4 +27716,100 @@ div.tagsinput span.tag a {
     right: 0;
     background: rgba(0, 0, 0, 0.25);
 }
-/*# sourceMappingURL=maps/style.css.map */
+
+.panel {
+    left: 0;
+    background: #12151e;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 8px;
+}
+
+.panel .panel-group {
+    vertical-align: top;
+    border-radius: 2px;
+    margin: 0px 5px 0px 0px;
+}
+
+.panel .panel-group select, .panel .panel-group input, .panel .panel-group label {
+    background: #444857;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    color: #9b9dad;
+    width: max-content;
+}
+
+.panel .panel-group > select, .panel .panel-group > input, .panel .panel-group > label {
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+.panel .panel-group select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 0.4rem);
+    padding: 0.2rem 1.4rem 0.2rem 0.4rem;
+    background-position-y: 50%;
+}
+
+.panel .panel-group input[type=number] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.panel .panel-group select {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+}
+
+.panel .panel-group select:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.number-input button {
+    outline:none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    content: '';
+    background-color: #212121;
+    transform: translate(-50%, -50%);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+    max-width: 20px;
+}
