@@ -8685,6 +8685,7 @@
 }
 
 html {
+    height: 100%;
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -8697,6 +8698,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
     margin: 0;
+    height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
@@ -9221,8 +9223,8 @@ pre code {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -0.75rem;
-    margin-left: -0.75rem;
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
 }
 
 .no-gutters {
@@ -17273,6 +17275,14 @@ button.bg-dark:focus {
     height: auto !important;
 }
 
+.w-max-content{
+    width: max-content !important;
+}
+
+.w-min-content{
+    width: min-content !important;
+}
+
 .mw-100 {
     max-width: 100% !important;
 }
@@ -17295,6 +17305,14 @@ button.bg-dark:focus {
 
 .min-vh-100 {
     min-height: 100vh !important;
+}
+
+.max-vw-100 {
+    max-width: 100vw !important;
+}
+
+.max-vh-100 {
+    max-height: 100vh !important;
 }
 
 .vw-100 {
@@ -20198,6 +20216,10 @@ p {
     font-size: 0.875rem;
 }
 
+.font-small{
+    font-size: 0.75rem;
+}
+
 .display-1 {
     font-size: 3.75rem;
 }
@@ -20865,8 +20887,8 @@ code {
 }
 
 .btn.btn-social-icon, .fc button.btn-social-icon, .ajax-upload-dragdrop .btn-social-icon.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-social-icon.swal2-styled, .wizard > .actions a.btn-social-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 0;
 }
 
@@ -21576,11 +21598,11 @@ code {
 }
 
 .card .card-body {
-    padding: 1rem 1rem;
+    padding: 0.8rem 0.8rem;
 }
 
 .card .card-body + .card-body {
-    padding-top: 1rem;
+    padding-top: 0.8rem;
 }
 
 .card .card-title {
@@ -27731,7 +27753,6 @@ div.tagsinput span.tag a {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
-    opacity: 1;
     position: absolute;
     right: 0;
     top: 0;
@@ -27739,6 +27760,7 @@ div.tagsinput span.tag a {
     z-index: 100;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     -ms-flex-direction: row;
@@ -27831,9 +27853,12 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: 20px;
 }
 
-.video {
-    width: 100%;
+.video{
+    display: block;
     height: 100%;
+    max-width: 100%;
     object-fit: contain;
     object-position: center;
+    vertical-align: middle;
+    margin: auto;
 }
