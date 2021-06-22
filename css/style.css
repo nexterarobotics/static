@@ -17327,6 +17327,22 @@ button.bg-dark:focus {
     margin: 0 !important;
 }
 
+.left-0 {
+    left: 0 !important;
+}
+
+.right-0 {
+    right: 0 !important;
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.bottom-0 {
+    bottom: 0 !important;
+}
+
 .mt-0, .demo-modal .modal-dialog,
 .my-0 {
     margin-top: 0 !important;
@@ -26492,13 +26508,14 @@ div.tagsinput span.tag a {
 
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
+/* === Landing screens === */
 
 /* Navbar */
 .navbar {
     font-weight: normal;
     background: #191c24;
-    left: 244px;
     transition: left 0.25s ease;
+    left: 244px;
     -webkit-transition: left 0.25s ease;
     -moz-transition: left 0.25s ease;
     -ms-transition: left 0.25s ease;
@@ -27694,7 +27711,6 @@ div.tagsinput span.tag a {
     padding-left: 0;
     padding-right: 0;
     transition: all 0.25s ease;
-    width: calc(100% - 244px);
 }
 
 .page-body-wrapper.full-page-wrapper {
@@ -27702,14 +27718,22 @@ div.tagsinput span.tag a {
     min-height: 100vh;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 2000px) {
     .page-body-wrapper {
         width: 100%;
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .page-body-wrapper {
+        width: 90%;
     }
 }
 
 .container-scroller {
     display: flex;
+    background: #000000;
     position: relative;
 }
 
