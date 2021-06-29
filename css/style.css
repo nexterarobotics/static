@@ -8705,7 +8705,8 @@ body {
     line-height: 1.5;
     color: #ffffff;
     text-align: left;
-    background-color: #fff;
+    background-color: #ffffff;
+    overflow-y: scroll;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -17154,6 +17155,14 @@ button.bg-dark:focus {
     overflow: hidden !important;
 }
 
+.overflow-y-scroll {
+    overflow-y: scroll !important;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll !important;
+}
+
 .position-static {
     position: static !important;
 }
@@ -20394,7 +20403,7 @@ body,
 html {
     overflow-x: hidden;
     padding-right: 0 !important;
-    background-color: #191c24;
+    background-color: #000000;
 }
 
 *:-moz-full-screen,
@@ -23444,7 +23453,6 @@ div.tagsinput {
 
 .nav-pills .nav-link {
     border: 1px solid #2c2e33;
-    padding: .5rem 1.5rem;
 }
 
 @media (max-width: 576px) {
@@ -23460,7 +23468,7 @@ div.tagsinput {
 @media (max-width: 576px) {
     .nav-pills .nav-item {
         margin-right: 0.5rem;
-        font-size: 0.675;
+        font-size: 0.675rem;
     }
 }
 
@@ -27721,7 +27729,7 @@ div.tagsinput span.tag a {
 @media (max-width: 2000px) {
     .page-body-wrapper {
         width: 100%;
-        max-width: 1500px;
+        max-width: 2000px;
     }
 }
 
