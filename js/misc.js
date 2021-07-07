@@ -1,3 +1,10 @@
+$("#close-sidebar").click(function () {
+    $(".sidebar-container").removeClass("toggled");
+});
+$("#show-sidebar").click(function () {
+    $(".sidebar-container").addClass("toggled");
+});
+
 (function ($) {
     'use strict';
     $(function () {
