@@ -26611,8 +26611,7 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand img {
-    width: calc(244px - 120px);
-    max-width: 100%;
+    width: auto;
     height: 28px;
     margin: auto;
     vertical-align: middle;
@@ -26623,8 +26622,7 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini img {
-    width: calc(70px - 50px);
-    max-width: 100%;
+    width: auto;
     height: 28px;
     margin: auto;
 }
